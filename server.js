@@ -22,8 +22,7 @@ const port = process.env.PORT || 3001;
 
 
 app.use(session({
-    store: new MongoStore({url:process.env.MONGODB_URI 
-        ||'mongodb+srv://test_user:MQLUfxfGHJZXNZQx@cluster0.zywo1.mongodb.net/shop?retryWrites=true&w=majority'}),
+    store: new MongoStore({url:process.env.MONGODB_URI }),
     secret: "BigScrectsDontTake",
     resave:false,
     saveUninitialized: false,

@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 
 
-const connectionString  =  process.env.MONGO_URI 
-|| 'mongodb+srv://test_user:MQLUfxfGHJZXNZQx@cluster0.zywo1.mongodb.net/shop?retryWrites=true&w=majority';
+const connectionString  =  process.env.MONGO_URI ;
 
 
 const configOptions ={
